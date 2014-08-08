@@ -3,6 +3,12 @@ package org.stuartgunter.dropwizard.intro.zk.health;
 import com.codahale.metrics.health.HealthCheck;
 import org.apache.zookeeper.ZooKeeper;
 
+/**
+ * This class was copied from https://github.com/datasift/dropwizard-extra. No copyright notice was on the
+ * source, so I hope this is sufficient acknowledgement.
+ *
+ * Source was copied rather than depending via Maven because the latest release only supports Dropwizard 0.6.2
+ */
 public class ZooKeeperHealthCheck extends HealthCheck {
 
     private final ZooKeeper client;

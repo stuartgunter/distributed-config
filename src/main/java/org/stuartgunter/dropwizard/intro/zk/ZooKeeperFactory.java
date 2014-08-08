@@ -16,6 +16,12 @@ import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 import java.io.IOException;
 
+/**
+ * This class was copied from https://github.com/datasift/dropwizard-extra. No copyright notice was on the
+ * source, so I hope this is sufficient acknowledgement.
+ *
+ * Source was copied rather than depending via Maven because the latest release only supports Dropwizard 0.6.2
+ */
 public class ZooKeeperFactory {
 
     private static final String DEFAULT_NAME = "zookeeper-default";
