@@ -1,0 +1,21 @@
+zkConfigRoot: /zkDemo
+
+configType: zookeeper
+
+cassandra:
+  contactPoints:
+    - 127.0.0.1
+
+curator:
+  ensemble:
+    namespace: apps
+
+httpClient:
+  timeout: 1 minute
+
+logging:
+  level: INFO
+  loggers:
+    "org.stuartgunter.dropwizard": DEBUG
+    "org.apache.curator": DEBUG
+    "com.netflix.config": DEBUG
